@@ -1,0 +1,156 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+/* .textArea{
+  height: 30px;
+  width: 100px;
+  border: solid 2px black;
+} */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+main {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  position: relative;
+  border: 5px solid black;
+  height: 800px;
+  width: 800px;
+  overflow: hidden;
+}
+.app-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.text-areas-container {
+  flex: 1;
+}
+
+.button-container,
+.undo-redo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+button {
+  padding: 10px;
+  background-color: #2ecc71; /* Green color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+button:hover {
+  background-color: #27ae60; /* Darker green on hover */
+}
+
+.create-button {
+  background-color: #2ecc71; /* Green color for create button */
+  border: 2px solid #27ae60; /* Darker green border */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.create-button:hover {
+  background-color: #27ae60; /* Darker green on hover for create button */
+}
+
+.undo-button,
+.redo-button {
+  background-color: #e74c3c; /* Red color for undo and redo buttons */
+  border: 2px solid #c0392b; /* Darker red border */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.undo-button:hover,
+.redo-button:hover {
+  background-color: #c0392b; /* Darker red on hover for undo and redo buttons */
+}
+
+
+.TextArea{
+  position: absolute;
+  /* top: 0;
+  left: 0; */
+  background-color: ivory;
+  height: 60px;
+  width: auto;
+  cursor: pointer;
+  border: solid 2px black;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+main {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* .container {
+  position: relative;
+  border: 1px solid black;
+  height: 800px;
+  width: 800px;
+  overflow: hidden;
+} */
+
+.box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: hotpink;
+  height: 60px;
+  width: 60px;
+  cursor: pointer;
+}
+
+.btns{
+  display: flex;
+flex-direction: column;
+align-items: center;
+}
